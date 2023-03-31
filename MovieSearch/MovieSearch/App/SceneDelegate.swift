@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(windowScene: windowScene)
         window?.makeKeyAndVisible()
-        window?.rootViewController = SearchViewController()
+        window?.rootViewController = SearchTabBarController()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
