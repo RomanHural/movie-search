@@ -13,6 +13,7 @@
 		D21ADEA829D8927C0019359B /* MovieSearchSignUpViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21ADEA729D8927C0019359B /* MovieSearchSignUpViewContoller.swift */; };
 		D21ADEAA29D8AA3C0019359B /* UIViewController + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21ADEA929D8AA3C0019359B /* UIViewController + Ext.swift */; };
 		D21ADEAC29D8C7240019359B /* MovieSearchPlainLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21ADEAB29D8C7240019359B /* MovieSearchPlainLabel.swift */; };
+		D23E89FA29DAF05E00B2E4F2 /* PhotoFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23E89F929DAF05E00B2E4F2 /* PhotoFileManager.swift */; };
 		D23FD78129D97E0C00C52763 /* WarningMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23FD78029D97E0C00C52763 /* WarningMessage.swift */; };
 		D24CAAD929D73146001EBC65 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24CAAD829D73146001EBC65 /* User.swift */; };
 		D24CAADB29D731EF001EBC65 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24CAADA29D731EF001EBC65 /* PersistenceManager.swift */; };
@@ -50,6 +51,7 @@
 		D21ADEA729D8927C0019359B /* MovieSearchSignUpViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchSignUpViewContoller.swift; sourceTree = "<group>"; };
 		D21ADEA929D8AA3C0019359B /* UIViewController + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Ext.swift"; sourceTree = "<group>"; };
 		D21ADEAB29D8C7240019359B /* MovieSearchPlainLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchPlainLabel.swift; sourceTree = "<group>"; };
+		D23E89F929DAF05E00B2E4F2 /* PhotoFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFileManager.swift; sourceTree = "<group>"; };
 		D23FD78029D97E0C00C52763 /* WarningMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarningMessage.swift; sourceTree = "<group>"; };
 		D24CAAD829D73146001EBC65 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D24CAADA29D731EF001EBC65 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
@@ -259,6 +261,7 @@
 			children = (
 				D2CC2E3D29D4D45300E45A9E /* NetworkManager.swift */,
 				D24CAADA29D731EF001EBC65 /* PersistenceManager.swift */,
+				D23E89F929DAF05E00B2E4F2 /* PhotoFileManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				D268767A29D5A49700B468E2 /* String + Ext.swift in Sources */,
 				D24CAADB29D731EF001EBC65 /* PersistenceManager.swift in Sources */,
 				D21ADEA329D881BF0019359B /* MovieSearchLoginViewController.swift in Sources */,
+				D23E89FA29DAF05E00B2E4F2 /* PhotoFileManager.swift in Sources */,
 				D2CC2E1B29D49B4600E45A9E /* MainViewController.swift in Sources */,
 				D21ADEA829D8927C0019359B /* MovieSearchSignUpViewContoller.swift in Sources */,
 				D268767729D59B3200B468E2 /* MovieSearchBodyLabel.swift in Sources */,

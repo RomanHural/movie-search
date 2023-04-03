@@ -27,7 +27,7 @@ class MovieSearchSignUpViewContoller: UIViewController {
     private let viewContollerTitle: String = "Create an Account"
     private let space: String = " "
     private let empty: String = ""
-    private let passImageName: String = "selectedImage.png"
+    //private let passImageName: String = "selectedImage.png"
     private var selectedImageString: String?
     
     // MARK: - Life Cycle
@@ -46,15 +46,6 @@ class MovieSearchSignUpViewContoller: UIViewController {
     private func setupUI() {
         view.backgroundColor = .white
         titleLabel.text = viewContollerTitle
-    }
-    
-    private func getImagePath(image: UIImage?) -> String {
-        let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-        let imageName = passImageName
-        let imageUrl = documentsDirectory.appendingPathComponent(imageName)
-        try? image!.pngData()?.write(to: imageUrl)
-        
-        return imageUrl.path
     }
     
     private func layoutUI() {
@@ -160,7 +151,7 @@ class MovieSearchSignUpViewContoller: UIViewController {
 extension MovieSearchSignUpViewContoller: UIImagePickerControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         profilePhotoImageView.image = info[.originalImage] as? UIImage
-        selectedImageString = getImagePath(image: info[.originalImage] as? UIImage)
+        selectedImageString = PhotoFileManager.getImagePath(image: info[.originalImage] as? UIImage)
         dismiss(animated: true)
     }
 }
