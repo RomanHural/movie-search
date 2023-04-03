@@ -12,25 +12,49 @@ class MainViewController: UIViewController {
     
     // MARK: - UI Element
     private let tableView = UITableView()
+    private let searchController = UISearchController()
     
     // MARK: - Private Properties
-    private let mainControllerTitle = "Main"
-    private let searchBarPlaceholder = "Search for a movie"
+    private let mainControllerTitle: String = "Main"
+    private let searchBarPlaceholder: String = "Search for a movie"
+    private let emptyString: String = ""
     private let rowHeight: CGFloat = 80
+    private let userKey: String?
+    private let fatalErrorMessage: String = "init(coder:) has not been implemented"
+    private let addButtonTitle: String = "Add to Favourites"
+    private let alertTitle: String = "Something went wrong"
+    private let alertMessage: String = "There is no movie with this title. Please, try enter other title"
     private var movies: [MovieInfo] = []
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
-        title = mainControllerTitle
+        setupUI()
         configureSearchController()
         configureTableView()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        searchController.searchBar.resignFirstResponder()
+    }
+    
+    // MARK: - Init
+    init(userKey: String) {
+        self.userKey = userKey
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError(fatalErrorMessage)
+    }
+    
     // MARK: - Private Methods
+    private func setupUI() {
+        view.backgroundColor = .white
+        title = mainControllerTitle
+    }
+    
     private func configureSearchController() {
-        let searchController = UISearchController()
         searchController.searchBar.placeholder = searchBarPlaceholder
         navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = false
@@ -65,8 +89,8 @@ extension MainViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let destinationVC = MovieDescriptionViewController()
-        destinationVC.movie = movies[indexPath.row]
+        let destinationVC = MovieDescriptionViewController(userKey: userKey ?? emptyString, currentMovie: movies[indexPath.row])
+        destinationVC.buttonSettingsDelegate = self
         tableView.deselectRow(at: indexPath, animated: true)
         let navigationController = UINavigationController(rootViewController: destinationVC)
         present(navigationController, animated: true)
@@ -88,11 +112,23 @@ extension MainViewController: UISearchBarDelegate {
                         self.tableView.scrollToRow(at: IndexPath(row: .zero, section: .zero),
                                                    at: .top,
                                                    animated: true)
+                    } else {
+                        self.presentAlert(withTitle: self.alertTitle, andMessage: self.alertMessage)
                     }
                 }
             case .failure(let error):
-                print(error)
+                self.movies = []
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                    self.presentAlert(withTitle: self.alertTitle, andMessage: error.rawValue)
+                }
             }
         }
     }
+}
+
+// MARK: - ButtonSettingsDelegate
+extension MainViewController: ButtonSettingsDelegate {
+    func getButtonColor() -> UIColor { .systemGreen }
+    func getButtonTitle() -> String { addButtonTitle }
 }

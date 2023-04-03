@@ -23,4 +23,16 @@ extension String {
         
         return date.convertToMonthYearFormat()
     }
+    
+    func isValidEmail() -> Bool {
+        let pattern = "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
+        do {
+            let regex = try NSRegularExpression(pattern: pattern)
+            let range = NSRange(location: 0, length: self.utf16.count)
+            return regex.firstMatch(in: self, options: [], range: range) != nil
+        } catch {
+            print("Error: Invalid regular expression pattern")
+            return false
+        }
+    }
 }

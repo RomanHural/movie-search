@@ -7,23 +7,32 @@
 
 import UIKit
 
+// MARK: - SearchTableViewCell
 class SearchTableViewCell: UITableViewCell {
     static let reuseID = "SearchCell"
     
-    let coverImageView = MovieSearchImageView(frame: .zero)
-    let movieNameLabel = MovieSearchTitleLabel(textAlignment: .left, fontSize: 17)
-    let genreLabel = MovieSearchBodyLabel(textAlignment: .left, fontSize: 12)
-    let releaseDateLabel = MovieSearchBodyLabel(textAlignment: .left, fontSize: 12)
+    // MARK: - UI Elements
+    private let coverImageView = MovieSearchImageView(frame: .zero)
+    private let movieNameLabel = MovieSearchTitleLabel(textAlignment: .left, fontSize: 17)
+    private let genreLabel = MovieSearchBodyLabel(textAlignment: .left, fontSize: 12)
+    private let releaseDateLabel = MovieSearchBodyLabel(textAlignment: .left, fontSize: 12)
     
+    // MARK: - Private Properties
+    private let fatalErrorMessage: String = "init(coder:) has not been implemented"
+    private let genreText: String = "Genre: "
+    private let releaseText: String = "Release date: "
+    
+    // MARK: - Init
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupUI()
     }
     
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        fatalError(fatalErrorMessage)
     }
     
+    // MARK: - Private Method
     private func setupUI() {
         contentView.addSubview(coverImageView)
         contentView.addSubview(movieNameLabel)
@@ -38,7 +47,7 @@ class SearchTableViewCell: UITableViewCell {
             coverImageView.heightAnchor.constraint(equalToConstant: 60),
             coverImageView.widthAnchor.constraint(equalToConstant: 60),
             
-            movieNameLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 8),
+            movieNameLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 5),
             movieNameLabel.leadingAnchor.constraint(equalTo: coverImageView.trailingAnchor, constant: padding),
             movieNameLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -35),
             movieNameLabel.heightAnchor.constraint(equalToConstant: 35),
@@ -55,10 +64,11 @@ class SearchTableViewCell: UITableViewCell {
         ])
     }
     
+    // MARK: - Public Methods
     func configure(movieName: String, releaseDate: String, genre: String) {
         movieNameLabel.text = movieName
-        genreLabel.text = "Genre: \(genre)"
-        releaseDateLabel.text = "Released: \(releaseDate.convertToDisplayFormat())"
+        genreLabel.text = genreText + genre
+        releaseDateLabel.text = releaseText + releaseDate.convertToDisplayFormat()
     }
     
     func setImage(movie: MovieInfo) {

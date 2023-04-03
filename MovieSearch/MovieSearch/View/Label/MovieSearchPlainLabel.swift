@@ -1,23 +1,26 @@
 //
-//  MovieSearchBodyLabel.swift
+//  MovieSearchPlainLabel.swift
 //  MovieSearch
 //
-//  Created by Roman Hural on 30.03.2023.
+//  Created by Roman Hural on 01.04.2023.
 //
+
 import UIKit
 
-// MARK: - MovieSearchBodyLabel
-class MovieSearchBodyLabel: UILabel {
+// MARK: - MovieSearchTitleLabel
+class MovieSearchPlainLabel: UILabel {
     
-    // MARK: - Private Property
+    // MARK: - Private Properties
+    private let minimumScaleFactorValue: CGFloat = 0.5
     private let fatalErrorMessage: String = "init(coder:) has not been implemented"
     
-    // MARK: - Init
+    // MARK: = Life Cycle
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
     }
     
+    // MARK: - Init
     required init?(coder: NSCoder) {
         fatalError(fatalErrorMessage)
     }
@@ -25,17 +28,16 @@ class MovieSearchBodyLabel: UILabel {
     convenience init(textAlignment: NSTextAlignment, fontSize: CGFloat) {
         self.init(frame: .zero)
         self.textAlignment = textAlignment
-        self.font = UIFont.systemFont(ofSize: fontSize, weight: .medium)
+        self.font = UIFont.systemFont(ofSize: fontSize, weight: .regular)
     }
     
     // MARK: - Private Method
     private func configure() {
-        sizeToFit()
         numberOfLines = .zero
-        textColor = .secondaryLabel
-        adjustsFontForContentSizeCategory = true
+        textColor = .systemBackground
         adjustsFontSizeToFitWidth = true
-        lineBreakMode = .byWordWrapping
+        minimumScaleFactor = minimumScaleFactorValue
+        lineBreakMode = .byTruncatingTail
         translatesAutoresizingMaskIntoConstraints = false
     }
 }

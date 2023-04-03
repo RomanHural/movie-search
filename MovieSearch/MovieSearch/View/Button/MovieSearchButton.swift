@@ -8,10 +8,11 @@
 import UIKit
 
 // MARK: - MovieSearchAddButton
-class MovieSearchAddButton: UIButton {
+class MovieSearchButton: UIButton {
     
     // MARK: - Private Properties
     private let cornerRadius: CGFloat = 10
+    private let fatalErrorMessage: String = "init(coder:) has not been implemented"
     
     // MARK: - Life Cycle
     override init(frame: CGRect) {
@@ -21,7 +22,7 @@ class MovieSearchAddButton: UIButton {
     
     // MARK: - Initializers
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        fatalError(fatalErrorMessage)
     }
     
     convenience init(backgroundColor: UIColor, title: String) {

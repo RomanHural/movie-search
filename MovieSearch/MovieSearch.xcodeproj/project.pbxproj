@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D21ADEA129D842EF0019359B /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21ADEA029D842EF0019359B /* UserInfo.swift */; };
+		D21ADEA329D881BF0019359B /* MovieSearchLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21ADEA229D881BF0019359B /* MovieSearchLoginViewController.swift */; };
+		D21ADEA629D8841C0019359B /* MovieSearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21ADEA529D8841C0019359B /* MovieSearchTextField.swift */; };
+		D21ADEA829D8927C0019359B /* MovieSearchSignUpViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21ADEA729D8927C0019359B /* MovieSearchSignUpViewContoller.swift */; };
+		D21ADEAA29D8AA3C0019359B /* UIViewController + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21ADEA929D8AA3C0019359B /* UIViewController + Ext.swift */; };
+		D21ADEAC29D8C7240019359B /* MovieSearchPlainLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21ADEAB29D8C7240019359B /* MovieSearchPlainLabel.swift */; };
+		D23FD78129D97E0C00C52763 /* WarningMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23FD78029D97E0C00C52763 /* WarningMessage.swift */; };
+		D24CAAD929D73146001EBC65 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24CAAD829D73146001EBC65 /* User.swift */; };
+		D24CAADB29D731EF001EBC65 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24CAADA29D731EF001EBC65 /* PersistenceManager.swift */; };
+		D24CAADD29D7469E001EBC65 /* MovieSearchProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24CAADC29D7469E001EBC65 /* MovieSearchProfileImageView.swift */; };
+		D24CAAE029D75277001EBC65 /* MovieSearchStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24CAADF29D75277001EBC65 /* MovieSearchStackView.swift */; };
+		D24CAAE429D7733B001EBC65 /* UIView + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24CAAE329D7733B001EBC65 /* UIView + Ext.swift */; };
 		D268766E29D5870600B468E2 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D268766D29D5870600B468E2 /* SearchTableViewCell.swift */; };
 		D268767229D5919700B468E2 /* MovieSearchTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D268767129D5919700B468E2 /* MovieSearchTitleLabel.swift */; };
 		D268767529D5937600B468E2 /* MovieSearchImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D268767429D5937600B468E2 /* MovieSearchImageView.swift */; };
@@ -28,10 +40,22 @@
 		D2CC2E4229D4D81900E45A9E /* MovieInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC2E4129D4D81900E45A9E /* MovieInfo.swift */; };
 		D2CC2E4429D4DA2E00E45A9E /* MovieSearchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC2E4329D4DA2E00E45A9E /* MovieSearchError.swift */; };
 		D2FA876C29D5F26800D39A3F /* MovieDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FA876B29D5F26800D39A3F /* MovieDescriptionViewController.swift */; };
-		D2FA876F29D6204700D39A3F /* MovieSearchAddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FA876E29D6204700D39A3F /* MovieSearchAddButton.swift */; };
+		D2FA876F29D6204700D39A3F /* MovieSearchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FA876E29D6204700D39A3F /* MovieSearchButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D21ADEA029D842EF0019359B /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		D21ADEA229D881BF0019359B /* MovieSearchLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchLoginViewController.swift; sourceTree = "<group>"; };
+		D21ADEA529D8841C0019359B /* MovieSearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchTextField.swift; sourceTree = "<group>"; };
+		D21ADEA729D8927C0019359B /* MovieSearchSignUpViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchSignUpViewContoller.swift; sourceTree = "<group>"; };
+		D21ADEA929D8AA3C0019359B /* UIViewController + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Ext.swift"; sourceTree = "<group>"; };
+		D21ADEAB29D8C7240019359B /* MovieSearchPlainLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchPlainLabel.swift; sourceTree = "<group>"; };
+		D23FD78029D97E0C00C52763 /* WarningMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarningMessage.swift; sourceTree = "<group>"; };
+		D24CAAD829D73146001EBC65 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D24CAADA29D731EF001EBC65 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		D24CAADC29D7469E001EBC65 /* MovieSearchProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchProfileImageView.swift; sourceTree = "<group>"; };
+		D24CAADF29D75277001EBC65 /* MovieSearchStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchStackView.swift; sourceTree = "<group>"; };
+		D24CAAE329D7733B001EBC65 /* UIView + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Ext.swift"; sourceTree = "<group>"; };
 		D268766D29D5870600B468E2 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		D268767129D5919700B468E2 /* MovieSearchTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchTitleLabel.swift; sourceTree = "<group>"; };
 		D268767429D5937600B468E2 /* MovieSearchImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchImageView.swift; sourceTree = "<group>"; };
@@ -55,7 +79,7 @@
 		D2CC2E4129D4D81900E45A9E /* MovieInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInfo.swift; sourceTree = "<group>"; };
 		D2CC2E4329D4DA2E00E45A9E /* MovieSearchError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchError.swift; sourceTree = "<group>"; };
 		D2FA876B29D5F26800D39A3F /* MovieDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDescriptionViewController.swift; sourceTree = "<group>"; };
-		D2FA876E29D6204700D39A3F /* MovieSearchAddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchAddButton.swift; sourceTree = "<group>"; };
+		D2FA876E29D6204700D39A3F /* MovieSearchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +93,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D21ADEA429D8840B0019359B /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				D21ADEA529D8841C0019359B /* MovieSearchTextField.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		D23E89F829DAD14D00B2E4F2 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				D2CC2E3629D4C32E00E45A9E /* SFSymbols.swift */,
+				D2CC2E3A29D4CF1600E45A9E /* ViewContollerTag.swift */,
+				D2CC2E4329D4DA2E00E45A9E /* MovieSearchError.swift */,
+				D23FD78029D97E0C00C52763 /* WarningMessage.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		D24CAADE29D75261001EBC65 /* StackView */ = {
+			isa = PBXGroup;
+			children = (
+				D24CAADF29D75277001EBC65 /* MovieSearchStackView.swift */,
+			);
+			path = StackView;
+			sourceTree = "<group>";
+		};
 		D268766C29D586D800B468E2 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +133,7 @@
 			children = (
 				D268767129D5919700B468E2 /* MovieSearchTitleLabel.swift */,
 				D268767629D59B3200B468E2 /* MovieSearchBodyLabel.swift */,
+				D21ADEAB29D8C7240019359B /* MovieSearchPlainLabel.swift */,
 			);
 			path = Label;
 			sourceTree = "<group>";
@@ -90,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				D268767429D5937600B468E2 /* MovieSearchImageView.swift */,
+				D24CAADC29D7469E001EBC65 /* MovieSearchProfileImageView.swift */,
 			);
 			path = ImageView;
 			sourceTree = "<group>";
@@ -99,6 +152,8 @@
 			children = (
 				D268767929D5A49700B468E2 /* String + Ext.swift */,
 				D268767B29D5A4DD00B468E2 /* Date + Ext.swift */,
+				D24CAAE329D7733B001EBC65 /* UIView + Ext.swift */,
+				D21ADEA929D8AA3C0019359B /* UIViewController + Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -140,6 +195,8 @@
 			children = (
 				D2CC2E3F29D4D62100E45A9E /* MoviesList.swift */,
 				D2CC2E4129D4D81900E45A9E /* MovieInfo.swift */,
+				D24CAAD829D73146001EBC65 /* User.swift */,
+				D21ADEA029D842EF0019359B /* UserInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -147,6 +204,8 @@
 		D2CC2E2B29D49C1500E45A9E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D21ADEA429D8840B0019359B /* TextField */,
+				D24CAADE29D75261001EBC65 /* StackView */,
 				D2FA876D29D6202300D39A3F /* Button */,
 				D268767329D5936700B468E2 /* ImageView */,
 				D268766F29D5917100B468E2 /* Label */,
@@ -158,11 +217,13 @@
 		D2CC2E2C29D49C1E00E45A9E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D21ADEA729D8927C0019359B /* MovieSearchSignUpViewContoller.swift */,
+				D21ADEA229D881BF0019359B /* MovieSearchLoginViewController.swift */,
 				D2CC2E2F29D4A18900E45A9E /* SearchTabBarController.swift */,
 				D2CC2E1A29D49B4600E45A9E /* MainViewController.swift */,
-				D2FA876B29D5F26800D39A3F /* MovieDescriptionViewController.swift */,
 				D2CC2E3129D4C01200E45A9E /* FavouritesViewController.swift */,
 				D2CC2E3329D4C06500E45A9E /* ProfileViewController.swift */,
+				D2FA876B29D5F26800D39A3F /* MovieDescriptionViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -188,9 +249,7 @@
 		D2CC2E3529D4C30F00E45A9E /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				D2CC2E3629D4C32E00E45A9E /* SFSymbols.swift */,
-				D2CC2E3A29D4CF1600E45A9E /* ViewContollerTag.swift */,
-				D2CC2E4329D4DA2E00E45A9E /* MovieSearchError.swift */,
+				D23E89F829DAD14D00B2E4F2 /* Enum */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -199,6 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				D2CC2E3D29D4D45300E45A9E /* NetworkManager.swift */,
+				D24CAADA29D731EF001EBC65 /* PersistenceManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -206,7 +266,7 @@
 		D2FA876D29D6202300D39A3F /* Button */ = {
 			isa = PBXGroup;
 			children = (
-				D2FA876E29D6204700D39A3F /* MovieSearchAddButton.swift */,
+				D2FA876E29D6204700D39A3F /* MovieSearchButton.swift */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -281,18 +341,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D21ADEA629D8841C0019359B /* MovieSearchTextField.swift in Sources */,
 				D2CC2E3E29D4D45300E45A9E /* NetworkManager.swift in Sources */,
+				D21ADEAC29D8C7240019359B /* MovieSearchPlainLabel.swift in Sources */,
 				D2CC2E4229D4D81900E45A9E /* MovieInfo.swift in Sources */,
 				D2CC2E3429D4C06500E45A9E /* ProfileViewController.swift in Sources */,
 				D2CC2E3729D4C32E00E45A9E /* SFSymbols.swift in Sources */,
+				D24CAADD29D7469E001EBC65 /* MovieSearchProfileImageView.swift in Sources */,
 				D2CC2E3B29D4CF1600E45A9E /* ViewContollerTag.swift in Sources */,
 				D2CC2E4429D4DA2E00E45A9E /* MovieSearchError.swift in Sources */,
 				D268767229D5919700B468E2 /* MovieSearchTitleLabel.swift in Sources */,
+				D21ADEA129D842EF0019359B /* UserInfo.swift in Sources */,
+				D24CAAE029D75277001EBC65 /* MovieSearchStackView.swift in Sources */,
 				D268767C29D5A4DD00B468E2 /* Date + Ext.swift in Sources */,
-				D2FA876F29D6204700D39A3F /* MovieSearchAddButton.swift in Sources */,
+				D2FA876F29D6204700D39A3F /* MovieSearchButton.swift in Sources */,
 				D268767529D5937600B468E2 /* MovieSearchImageView.swift in Sources */,
 				D268767A29D5A49700B468E2 /* String + Ext.swift in Sources */,
+				D24CAADB29D731EF001EBC65 /* PersistenceManager.swift in Sources */,
+				D21ADEA329D881BF0019359B /* MovieSearchLoginViewController.swift in Sources */,
 				D2CC2E1B29D49B4600E45A9E /* MainViewController.swift in Sources */,
+				D21ADEA829D8927C0019359B /* MovieSearchSignUpViewContoller.swift in Sources */,
 				D268767729D59B3200B468E2 /* MovieSearchBodyLabel.swift in Sources */,
 				D2CC2E3029D4A18900E45A9E /* SearchTabBarController.swift in Sources */,
 				D268766E29D5870600B468E2 /* SearchTableViewCell.swift in Sources */,
@@ -301,6 +369,10 @@
 				D2CC2E1729D49B4600E45A9E /* AppDelegate.swift in Sources */,
 				D2CC2E3229D4C01200E45A9E /* FavouritesViewController.swift in Sources */,
 				D2CC2E1929D49B4600E45A9E /* SceneDelegate.swift in Sources */,
+				D24CAAD929D73146001EBC65 /* User.swift in Sources */,
+				D21ADEAA29D8AA3C0019359B /* UIViewController + Ext.swift in Sources */,
+				D23FD78129D97E0C00C52763 /* WarningMessage.swift in Sources */,
+				D24CAAE429D7733B001EBC65 /* UIView + Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,18 +516,22 @@
 				INFOPLIST_FILE = MovieSearch/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.MovieSearch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MovieSearch2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -471,18 +547,22 @@
 				INFOPLIST_FILE = MovieSearch/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.MovieSearch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MovieSearch1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

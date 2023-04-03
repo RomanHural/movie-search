@@ -5,7 +5,6 @@
 //  Created by Roman Hural on 30.03.2023.
 //
 
-import Foundation
 import UIKit
 
 // MARK: - MovieSearchTitleLabel
@@ -13,16 +12,17 @@ class MovieSearchTitleLabel: UILabel {
     
     // MARK: - Private Properties
     private let minimumScaleFactorValue: CGFloat = 0.5
+    private let fatalErrorMessage: String = "init(coder:) has not been implemented"
     
-    // MARK: = Lifw Cycle
+    // MARK: = Life Cycle
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
     }
     
-    // MARK: - Initializers
+    // MARK: - Init
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        fatalError(fatalErrorMessage)
     }
     
     convenience init(textAlignment: NSTextAlignment, fontSize: CGFloat) {
