@@ -12,7 +12,6 @@ enum PhotoFileManager {
     private static let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
     
     static func getImagePath(image: UIImage?) -> String {
-        let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
         let timestamp = Int(Date().timeIntervalSince1970 * 1000)
         let randomInt = Int.random(in: 0..<1000000)
         let imageName = "\(timestamp)_\(randomInt).png"
