@@ -1,5 +1,5 @@
 //
-//  FileManager.swift
+//  PhotoFileManager.swift
 //  MovieSearch
 //
 //  Created by Roman Hural on 03.04.2023.
