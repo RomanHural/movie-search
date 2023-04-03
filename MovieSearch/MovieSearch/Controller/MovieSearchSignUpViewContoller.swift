@@ -27,7 +27,6 @@ class MovieSearchSignUpViewContoller: UIViewController {
     private let viewContollerTitle: String = "Create an Account"
     private let space: String = " "
     private let empty: String = ""
-    //private let passImageName: String = "selectedImage.png"
     private var selectedImageString: String?
     
     // MARK: - Life Cycle
