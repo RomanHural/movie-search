@@ -94,19 +94,15 @@ class MovieSearchLoginViewController: UIViewController {
                     case .success(let user):
                         guard let userInfo = user.userInfo else { return }
                         if userInfo.password == password {
-                            DispatchQueue.main.async { self.move(to: SearchTabBarController(userKey: email)) }
+                            self.move(to: SearchTabBarController(userKey: email))
                         } else {
-                            DispatchQueue.main.async {
-                                self.warningMessageLabel.textColor = .systemRed
-                                self.warningMessageLabel.text = WarningMessage.incorrectPassword
-                                return
-                            }
-                        }
-                    case .failure(let error):
-                        DispatchQueue.main.async {
-                            self.presentAlert(withTitle: self.alertTitle, andMessage: error.rawValue)
+                            self.warningMessageLabel.textColor = .systemRed
+                            self.warningMessageLabel.text = WarningMessage.incorrectPassword
                             return
                         }
+                    case .failure(let error):
+                        self.presentAlert(withTitle: self.alertTitle, andMessage: error.rawValue)
+                        return
                     }
                 }
             } else {
